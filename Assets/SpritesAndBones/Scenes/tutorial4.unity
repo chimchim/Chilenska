@@ -1,0 +1,4747 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+  m_NavMesh: {fileID: 0}
+--- !u!1 &36952848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 36952850}
+  - 114: {fileID: 36952849}
+  - 114: {fileID: 36952851}
+  m_Layer: 0
+  m_Name: Hand.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &36952849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36952848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 5
+  length: .771828055
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .430000007
+  influenceHead: .430000007
+  zOrder: -.100000001
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!4 &36952850
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36952848}
+  m_LocalRotation: {x: 0, y: 0, z: .40663746, w: .913589656}
+  m_LocalPosition: {x: -5.18034895e-08, y: .56068635, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434008902}
+  m_RootOrder: 0
+--- !u!114 &36952851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36952848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938b560d4abdf5f42aeac0c56311a10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  influence: 1
+  chainLength: 3
+  target: {fileID: 1372983119}
+--- !u!1 &194900707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 194900708}
+  - 114: {fileID: 194900709}
+  m_Layer: 0
+  m_Name: HandIK.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194900708
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194900707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.76815844, y: 2.27829766, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
+  m_Children: []
+  m_Father: {fileID: 388657520}
+  m_RootOrder: 2
+--- !u!114 &194900709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194900707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe398397c40f5e4586ee379a6558f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  showCross: 0
+  crossScale: 1
+  showX: 0
+  xScale: 1
+  polygonSides: 3
+  freezeSize: 0
+  color: {r: 0, g: 1, b: 0, a: 1}
+--- !u!1 &207296989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 207296990}
+  - 114: {fileID: 207296991}
+  m_Layer: 0
+  m_Name: UpperArm.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &207296990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207296989}
+  m_LocalRotation: {x: 0, y: 0, z: .775072157, w: .631872773}
+  m_LocalPosition: {x: -.433027357, y: .25161007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 831106255}
+  m_Father: {fileID: 1597292800}
+  m_RootOrder: 2
+--- !u!114 &207296991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207296989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 6
+  length: .577132404
+  snapToParent: 0
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .340000004
+  influenceHead: .400000006
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &271010122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 271010123}
+  - 114: {fileID: 271010124}
+  - 114: {fileID: 271010125}
+  m_Layer: 0
+  m_Name: Foot.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &271010123
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 271010122}
+  m_LocalRotation: {x: 0, y: 0, z: .0386067368, w: -.999254525}
+  m_LocalPosition: {x: -1.82973537e-07, y: 1.01717544, z: 0}
+  m_LocalScale: {x: .999999762, y: .999999762, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2055382279}
+  m_RootOrder: 0
+--- !u!114 &271010124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 271010122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 11
+  length: .472206593
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .280000001
+  influenceHead: .319999993
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!114 &271010125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 271010122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938b560d4abdf5f42aeac0c56311a10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  influence: 1
+  chainLength: 3
+  target: {fileID: 1340019252}
+--- !u!1 &388657519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 388657520}
+  - 114: {fileID: 388657521}
+  m_Layer: 0
+  m_Name: Skeleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &388657520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 388657519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1340019252}
+  - {fileID: 1372983119}
+  - {fileID: 194900708}
+  - {fileID: 1567040051}
+  - {fileID: 1480329631}
+  m_Father: {fileID: 928777025}
+  m_RootOrder: 0
+--- !u!114 &388657521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 388657519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207489398b962b04296642bc3e45a300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editMode: 1
+  showBoneInfluence: 0
+  basePose: {fileID: 0}
+  _flip: 0
+  _useShadows: 0
+--- !u!1 &434008901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 434008902}
+  - 114: {fileID: 434008903}
+  m_Layer: 0
+  m_Name: LowerArm.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434008902
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434008901}
+  m_LocalRotation: {x: 0, y: 0, z: .372317225, w: .928105533}
+  m_LocalPosition: {x: -1.61005431e-07, y: .561019123, z: 0}
+  m_LocalScale: {x: .999999881, y: .999999881, z: 1}
+  m_Children:
+  - {fileID: 36952850}
+  m_Father: {fileID: 1727339038}
+  m_RootOrder: 0
+--- !u!114 &434008903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434008901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 4
+  length: .560686231
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .400000006
+  influenceHead: .430000007
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &589821833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 589821834}
+  - 114: {fileID: 589821835}
+  - 114: {fileID: 589821836}
+  m_Layer: 0
+  m_Name: Hand.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589821834
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 589821833}
+  m_LocalRotation: {x: 0, y: 0, z: .434316605, w: -.900760293}
+  m_LocalPosition: {x: 1.77147228e-07, y: .560704589, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children: []
+  m_Father: {fileID: 831106255}
+  m_RootOrder: 0
+--- !u!114 &589821835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 589821833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 8
+  length: .771893799
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .400000006
+  influenceHead: .469999999
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!114 &589821836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 589821833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938b560d4abdf5f42aeac0c56311a10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  influence: 1
+  chainLength: 3
+  target: {fileID: 194900708}
+--- !u!43 &621524119
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Generated Mesh
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 129
+    topology: 0
+    firstVertex: 0
+    vertexCount: 45
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 1.98135996, y: 2.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose:
+  - e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: .999898732
+    e01: .0142310867
+    e02: 0
+    e03: -.0173619278
+    e10: -.0142310867
+    e11: .999898732
+    e12: 0
+    e13: -1.21987665
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: 1
+    e01: 0
+    e02: 0
+    e03: .00646095676
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: -1.67395759
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.581265748
+    e01: -.813714027
+    e02: 0
+    e03: 1.44626045
+    e10: .813714027
+    e11: -.581265748
+    e12: 0
+    e13: .496469438
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.510980666
+    e01: -.859592497
+    e02: 0
+    e03: 1.43575311
+    e10: .859592497
+    e11: -.510980666
+    e12: 0
+    e13: -.185605302
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.60809648
+    e01: -.793863416
+    e02: 0
+    e03: 1.51324666
+    e10: .793863416
+    e11: -.60809648
+    e12: 0
+    e13: -.573080719
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.474835843
+    e01: .880074501
+    e02: 0
+    e03: -1.49697733
+    e10: -.880074501
+    e11: -.474835843
+    e12: 0
+    e13: .311625987
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.659276545
+    e01: .751900673
+    e02: 0
+    e03: -1.51847506
+    e10: -.751900673
+    e11: -.659276545
+    e12: 0
+    e13: .0752905309
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.527611136
+    e01: .849486113
+    e02: 0
+    e03: -1.41879857
+    e10: -.849486113
+    e11: -.527611136
+    e12: 0
+    e13: -.726910293
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.997322083
+    e01: .0731364563
+    e02: 0
+    e03: .352550805
+    e10: -.0731364563
+    e11: -.997322083
+    e12: 0
+    e13: .360474557
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.99967134
+    e01: .0256406888
+    e02: 0
+    e03: .305794388
+    e10: -.0256406888
+    e11: -.99967134
+    e12: 0
+    e13: -.990782678
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.993863046
+    e01: -.110618584
+    e02: 0
+    e03: .0297499429
+    e10: .110618584
+    e11: -.993863046
+    e12: 0
+    e13: -2.03079414
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.999987125
+    e01: -.00510937627
+    e02: 0
+    e03: -.311094314
+    e10: .00510937627
+    e11: -.999987125
+    e12: 0
+    e13: .335318416
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.999456465
+    e01: -.0329707451
+    e02: 0
+    e03: -.337658882
+    e10: .0329707451
+    e11: -.999456465
+    e12: 0
+    e13: -.948669136
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -.999048173
+    e01: .0436238162
+    e02: 0
+    e03: -.183309749
+    e10: -.0436238162
+    e11: -.999048173
+    e12: 0
+    e13: -2.0236218
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_StreamCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 18000a000900180017000a0017000b000a00170016000b00160002000b0016000d0002001800090008001800080010000f00100008000f00080007000e000f0007000e000700060004000e00060004000600030010002200180011002200100012002200110012002100220013002100120013002000210005002000130005001500200022001900180022002300190023001a001900230024001a0024002a001a001a002a0001001a0001001b0001001c001b00010029001c0029001d001c00290028001d0028000c001d0028001e000c0025002a002400250000002a0025002b000000250026002b0026002c002b00260027002c0027001f002c00270014001f00
+  m_Skin:
+  - weight[0]: .55520606
+    weight[1]: .170612752
+    weight[2]: .274181217
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 9
+    boneIndex[2]: 12
+    boneIndex[3]: 0
+  - weight[0]: .554117978
+    weight[1]: .207563549
+    weight[2]: .238318488
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 9
+    boneIndex[2]: 12
+    boneIndex[3]: 0
+  - weight[0]: .740334392
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 5
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .689777553
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 2
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .617951214
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 2
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .769082487
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 8
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .239600807
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 2
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .286356628
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 2
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .0636060983
+    weight[1]: .208372578
+    weight[2]: .11623238
+    weight[3]: .40676406
+    boneIndex[0]: 0
+    boneIndex[1]: 1
+    boneIndex[2]: 3
+    boneIndex[3]: 2
+  - weight[0]: .424677402
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 3
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .496761471
+    weight[1]: .503238559
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 3
+    boneIndex[1]: 4
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .499962598
+    weight[1]: .500037432
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 4
+    boneIndex[1]: 5
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .263905764
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 11
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .618884981
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 5
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .241685256
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 2
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .0143982908
+    weight[1]: .395452589
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 1
+    boneIndex[1]: 2
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .125910833
+    weight[1]: .234218985
+    weight[2]: .408260107
+    weight[3]: .214717045
+    boneIndex[0]: 0
+    boneIndex[1]: 1
+    boneIndex[2]: 2
+    boneIndex[3]: 6
+  - weight[0]: .15712975
+    weight[1]: .0616831817
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 2
+    boneIndex[1]: 6
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .5083341
+    weight[1]: .49166593
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 6
+    boneIndex[1]: 7
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .499299318
+    weight[1]: .500700593
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 7
+    boneIndex[1]: 8
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .375281185
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 14
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .722283483
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 8
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .389343739
+    weight[1]: .39329195
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 4
+    boneIndex[1]: 5
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .497268289
+    weight[1]: .502731681
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 3
+    boneIndex[1]: 4
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .279165298
+    weight[1]: .155395865
+    weight[2]: .501057863
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 1
+    boneIndex[2]: 3
+    boneIndex[3]: 0
+  - weight[0]: .447396904
+    weight[1]: .180811271
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 9
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .21666041
+    weight[1]: .520360053
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 9
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .369428426
+    weight[1]: .615843773
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 9
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .239156425
+    weight[1]: .320074797
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 9
+    boneIndex[1]: 10
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .10999164
+    weight[1]: .20033972
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 10
+    boneIndex[1]: 11
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .235500902
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 11
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .343267709
+    weight[1]: 0
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 14
+    boneIndex[1]: 0
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .41483444
+    weight[1]: .446037024
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 7
+    boneIndex[1]: 8
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .399267405
+    weight[1]: .407621294
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 6
+    boneIndex[1]: 7
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .305267751
+    weight[1]: .179957509
+    weight[2]: .422750801
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 1
+    boneIndex[2]: 6
+    boneIndex[3]: 0
+  - weight[0]: .498868406
+    weight[1]: .231808633
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 12
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .180232391
+    weight[1]: .350402832
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 12
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .37435028
+    weight[1]: .543771327
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 12
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .409524649
+    weight[1]: .422705263
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 12
+    boneIndex[1]: 13
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .0817131773
+    weight[1]: .279486835
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 13
+    boneIndex[1]: 14
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  - weight[0]: .171373859
+    weight[1]: .259943932
+    weight[2]: .00458182767
+    weight[3]: 0
+    boneIndex[0]: 10
+    boneIndex[1]: 11
+    boneIndex[2]: 14
+    boneIndex[3]: 0
+  - weight[0]: .0687098131
+    weight[1]: .187598437
+    weight[2]: .0507649556
+    weight[3]: .0753215775
+    boneIndex[0]: 9
+    boneIndex[1]: 10
+    boneIndex[2]: 12
+    boneIndex[3]: 13
+  - weight[0]: .597330928
+    weight[1]: .183211237
+    weight[2]: .219457805
+    weight[3]: 0
+    boneIndex[0]: 0
+    boneIndex[1]: 9
+    boneIndex[2]: 12
+    boneIndex[3]: 0
+  - weight[0]: .00883174315
+    weight[1]: .236252427
+    weight[2]: .252526283
+    weight[3]: 0
+    boneIndex[0]: 10
+    boneIndex[1]: 12
+    boneIndex[2]: 13
+    boneIndex[3]: 0
+  - weight[0]: .102485061
+    weight[1]: .298816442
+    weight[2]: 0
+    weight[3]: 0
+    boneIndex[0]: 13
+    boneIndex[1]: 14
+    boneIndex[2]: 0
+    boneIndex[3]: 0
+  m_VertexData:
+    m_CurrentChannels: 15
+    m_VertexCount: 45
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 1
+      offset: 0
+      format: 2
+      dimension: 1
+    - stream: 1
+      offset: 4
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_Streams:
+    - channelMask: 3
+      offset: 0
+      stride: 24
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 12
+      offset: 1088
+      stride: 12
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    m_DataSize: 1628
+    _typelessdata: 6aa93cbc529b98be0000000000000000000000000000803f5088003c715599be0000000000000000000000000000803f349dfd3f1574073f0000000000000000000000000000803f05c0283e000020400000000000000000000000000000803fe70061be000020400000000000000000000000000000803f349dfdbf5e85103f0000000000000000000000000000803fa3e9cc3ed7a30f400000000000000000000000000000803facc0a83e670fee3f0000000000000000000000000000803f1097843eecfadb3f0000000000000000000000000000803f7992003fbef1d33f0000000000000000000000000000803fa392803fa2b9a23f0000000000000000000000000000803f38d6bb3fb493813f0000000000000000000000000000803f1b9e0a3f000020c00000000000000000000000000000803f349dfd3fe700613e0000000000000000000000000000803f8eeed0be8ca10d400000000000000000000000000000803f69a994be560eed3f0000000000000000000000000000803ffa9b88be0af4d53f0000000000000000000000000000803f60e5c8be1804e43f0000000000000000000000000000803f0e1573bf37bea63f0000000000000000000000000000803f83d8bdbf3b1e7b3f0000000000000000000000000000803f768902bf000020c00000000000000000000000000000803f349dfdbf69a9943e0000000000000000000000000000803f0bb59e3f2cb7203f0000000000000000000000000000803f66f7583fb493813f0000000000000000000000000000803ffdfbdc3e1cb69f3f0000000000000000000000000000803f60e5c83ea3e94c3f0000000000000000000000000000803f37be263ff0c4ac3e0000000000000000000000000000803f7992003f69a994be0000000000000000000000000000803fee94023f1a1c79bf0000000000000000000000000000803f8317f53e061200c00000000000000000000000000000803fcd92803d000020c00000000000000000000000000000803fc05b80bd000020c00000000000000000000000000000803f37bea6bf00ae183f0000000000000000000000000000803f3aee50bfb0207d3f0000000000000000000000000000803fcff2d4be1cb69f3f0000000000000000000000000000803f06d3b8be55de423f0000000000000000000000000000803ff0c42cbf49d7bc3e0000000000000000000000000000803f109704bfcd9280be0000000000000000000000000000803f799200bf0e1573bf0000000000000000000000000000803f799200bfa39200c00000000000000000000000000000803f34dc403d799200c00000000000000000000000000000803f5088003c07eb73bf0000000000000000000000000000803f5088003c5088003c0000000000000000000000000000803f4ce056bde6e871bf0000000000000000000000000000803f34dc40bd799200c00000000000000000000000000000803f000034420000a040ffffffff73be003f897ae13effffffff7afcfe3e5055e13effffffff0000000037171b3fffffffff1cb5ea3e0000803fffffffffe8310e3f0000803fffffffff0000803f68e71c3fffffffff414acc3e68e9723fffffffff596ad53e5c395f3fffffffff508ade3ef8fd573fffffffffce1bbf3e19c7543fffffffff7a6f7c3e0d17413fffffffffd5ca043eaed4333fffffffff0f0aba3e00000000ffffffff000000000c400b3fffffffffb35c1a3ff94d713ffffffffff4c1123f89d25e3fffffffff9b3c113fd194553fffffffff1d59193fc6345b3fffffffffac573d3f7db2423fffffffffd0d05f3f3f39323ffffffffffaf0203f00000000ffffffff0000803fbedd0e3fffffffff80993f3ea224203fffffffff1b7f923eaed4333fffffffffe63bc83e71e23f3fffffffffc64dcd3e87fb283fffffffff17d8ab3ee546113fffffffffce1bbf3e8544e23effffffff4818be3e295b9c3effffffff8126c23e7559cc3dffffffff6de3f73e00000000ffffffff840c043f00000000ffffffffd927543f33891e3fffffffff56b9343f23a0323fffffffff76de1a3f71e23f3fffffffff0052173f44f9263fffffffff4e992b3f54e2123fffffffff9f75213f0a49e63effffffff0872203f61c49e3effffffff0872203f5322c93dffffffff9aeaf93e6023c93dffffffff7afcfe3eca6e9e3effffffff7afcfe3ee466003fffffffffa263033f713c9f3effffffffb30a033f6023c93d
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BindPoses:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Colors:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 1.98135996, y: 2.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_MeshOptimized: 0
+--- !u!1 &831106254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 831106255}
+  - 114: {fileID: 831106256}
+  m_Layer: 0
+  m_Name: LowerArm.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &831106255
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831106254}
+  m_LocalRotation: {x: 0, y: 0, z: .282743126, w: -.959195673}
+  m_LocalPosition: {x: 1.05720588e-09, y: .577132463, z: 0}
+  m_LocalScale: {x: .999999881, y: .999999881, z: 1}
+  m_Children:
+  - {fileID: 589821834}
+  m_Father: {fileID: 207296990}
+  m_RootOrder: 0
+--- !u!114 &831106256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831106254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 7
+  length: .560704529
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .400000006
+  influenceHead: .400000006
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &928777024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 928777025}
+  - 33: {fileID: 928777028}
+  - 137: {fileID: 928777027}
+  - 114: {fileID: 928777026}
+  m_Layer: 0
+  m_Name: Skin2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928777025
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928777024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.48939157, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 388657520}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!114 &928777026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928777024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4b9e00c47c1ba4a9fed935597d5c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  boneWeights:
+    weights:
+    - index: 0
+      boneName: Hip
+      vertex: 0
+      weight: .55520606
+    - index: 0
+      boneName: Hip
+      vertex: 1
+      weight: .554117978
+    - index: 0
+      boneName: Hip
+      vertex: 2
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 3
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 4
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 5
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 6
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 7
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 8
+      weight: .0636060983
+    - index: 0
+      boneName: Hip
+      vertex: 9
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 10
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 11
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 12
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 13
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 14
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 15
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 16
+      weight: .125910833
+    - index: 0
+      boneName: Hip
+      vertex: 17
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 18
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 19
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 20
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 21
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 22
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 23
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 24
+      weight: .279165298
+    - index: 0
+      boneName: Hip
+      vertex: 25
+      weight: .447396904
+    - index: 0
+      boneName: Hip
+      vertex: 26
+      weight: .21666041
+    - index: 0
+      boneName: Hip
+      vertex: 27
+      weight: .369428426
+    - index: 0
+      boneName: Hip
+      vertex: 28
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 29
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 30
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 31
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 32
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 33
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 34
+      weight: .305267751
+    - index: 0
+      boneName: Hip
+      vertex: 35
+      weight: .498868406
+    - index: 0
+      boneName: Hip
+      vertex: 36
+      weight: .180232391
+    - index: 0
+      boneName: Hip
+      vertex: 37
+      weight: .37435028
+    - index: 0
+      boneName: Hip
+      vertex: 38
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 39
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 40
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 41
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 42
+      weight: .597330928
+    - index: 0
+      boneName: Hip
+      vertex: 43
+      weight: 0
+    - index: 0
+      boneName: Hip
+      vertex: 44
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 0
+      weight: .170612752
+    - index: 9
+      boneName: Thigh.L
+      vertex: 1
+      weight: .207563549
+    - index: 9
+      boneName: Thigh.L
+      vertex: 2
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 3
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 4
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 5
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 6
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 7
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 8
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 9
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 10
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 11
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 12
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 13
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 14
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 15
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 16
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 17
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 18
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 19
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 20
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 21
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 22
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 23
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 24
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 25
+      weight: .180811271
+    - index: 9
+      boneName: Thigh.L
+      vertex: 26
+      weight: .520360053
+    - index: 9
+      boneName: Thigh.L
+      vertex: 27
+      weight: .615843773
+    - index: 9
+      boneName: Thigh.L
+      vertex: 28
+      weight: .239156425
+    - index: 9
+      boneName: Thigh.L
+      vertex: 29
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 30
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 31
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 32
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 33
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 34
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 35
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 36
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 37
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 38
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 39
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 40
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 41
+      weight: .0687098131
+    - index: 9
+      boneName: Thigh.L
+      vertex: 42
+      weight: .183211237
+    - index: 9
+      boneName: Thigh.L
+      vertex: 43
+      weight: 0
+    - index: 9
+      boneName: Thigh.L
+      vertex: 44
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 0
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 1
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 2
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 3
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 4
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 5
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 6
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 7
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 8
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 9
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 10
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 11
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 12
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 13
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 14
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 15
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 16
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 17
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 18
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 19
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 20
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 21
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 22
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 23
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 24
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 25
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 26
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 27
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 28
+      weight: .320074797
+    - index: 10
+      boneName: Shin.L
+      vertex: 29
+      weight: .10999164
+    - index: 10
+      boneName: Shin.L
+      vertex: 30
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 31
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 32
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 33
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 34
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 35
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 36
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 37
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 38
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 39
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 40
+      weight: .171373859
+    - index: 10
+      boneName: Shin.L
+      vertex: 41
+      weight: .187598437
+    - index: 10
+      boneName: Shin.L
+      vertex: 42
+      weight: 0
+    - index: 10
+      boneName: Shin.L
+      vertex: 43
+      weight: .00883174315
+    - index: 10
+      boneName: Shin.L
+      vertex: 44
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 0
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 1
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 2
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 3
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 4
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 5
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 6
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 7
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 8
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 9
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 10
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 11
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 12
+      weight: .263905764
+    - index: 11
+      boneName: Foot.L
+      vertex: 13
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 14
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 15
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 16
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 17
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 18
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 19
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 20
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 21
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 22
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 23
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 24
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 25
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 26
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 27
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 28
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 29
+      weight: .20033972
+    - index: 11
+      boneName: Foot.L
+      vertex: 30
+      weight: .235500902
+    - index: 11
+      boneName: Foot.L
+      vertex: 31
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 32
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 33
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 34
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 35
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 36
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 37
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 38
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 39
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 40
+      weight: .259943932
+    - index: 11
+      boneName: Foot.L
+      vertex: 41
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 42
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 43
+      weight: 0
+    - index: 11
+      boneName: Foot.L
+      vertex: 44
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 0
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 1
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 2
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 3
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 4
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 5
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 6
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 7
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 8
+      weight: .208372578
+    - index: 1
+      boneName: Chest
+      vertex: 9
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 10
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 11
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 12
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 13
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 14
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 15
+      weight: .0143982908
+    - index: 1
+      boneName: Chest
+      vertex: 16
+      weight: .234218985
+    - index: 1
+      boneName: Chest
+      vertex: 17
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 18
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 19
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 20
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 21
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 22
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 23
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 24
+      weight: .155395865
+    - index: 1
+      boneName: Chest
+      vertex: 25
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 26
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 27
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 28
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 29
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 30
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 31
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 32
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 33
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 34
+      weight: .179957509
+    - index: 1
+      boneName: Chest
+      vertex: 35
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 36
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 37
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 38
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 39
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 40
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 41
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 42
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 43
+      weight: 0
+    - index: 1
+      boneName: Chest
+      vertex: 44
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 0
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 1
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 2
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 3
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 4
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 5
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 6
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 7
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 8
+      weight: .11623238
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 9
+      weight: .424677402
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 10
+      weight: .496761471
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 11
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 12
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 13
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 14
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 15
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 16
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 17
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 18
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 19
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 20
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 21
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 22
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 23
+      weight: .497268289
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 24
+      weight: .501057863
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 25
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 26
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 27
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 28
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 29
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 30
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 31
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 32
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 33
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 34
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 35
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 36
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 37
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 38
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 39
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 40
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 41
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 42
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 43
+      weight: 0
+    - index: 3
+      boneName: UpperArm.L
+      vertex: 44
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 0
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 1
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 2
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 3
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 4
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 5
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 6
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 7
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 8
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 9
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 10
+      weight: .503238559
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 11
+      weight: .499962598
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 12
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 13
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 14
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 15
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 16
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 17
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 18
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 19
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 20
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 21
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 22
+      weight: .389343739
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 23
+      weight: .502731681
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 24
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 25
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 26
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 27
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 28
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 29
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 30
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 31
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 32
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 33
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 34
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 35
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 36
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 37
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 38
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 39
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 40
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 41
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 42
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 43
+      weight: 0
+    - index: 4
+      boneName: LowerArm.L
+      vertex: 44
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 0
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 1
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 2
+      weight: .740334392
+    - index: 5
+      boneName: Hand.L
+      vertex: 3
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 4
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 5
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 6
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 7
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 8
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 9
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 10
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 11
+      weight: .500037432
+    - index: 5
+      boneName: Hand.L
+      vertex: 12
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 13
+      weight: .618884981
+    - index: 5
+      boneName: Hand.L
+      vertex: 14
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 15
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 16
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 17
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 18
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 19
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 20
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 21
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 22
+      weight: .39329195
+    - index: 5
+      boneName: Hand.L
+      vertex: 23
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 24
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 25
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 26
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 27
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 28
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 29
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 30
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 31
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 32
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 33
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 34
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 35
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 36
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 37
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 38
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 39
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 40
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 41
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 42
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 43
+      weight: 0
+    - index: 5
+      boneName: Hand.L
+      vertex: 44
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 0
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 1
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 2
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 3
+      weight: .689777553
+    - index: 2
+      boneName: Head
+      vertex: 4
+      weight: .617951214
+    - index: 2
+      boneName: Head
+      vertex: 5
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 6
+      weight: .239600807
+    - index: 2
+      boneName: Head
+      vertex: 7
+      weight: .286356628
+    - index: 2
+      boneName: Head
+      vertex: 8
+      weight: .40676406
+    - index: 2
+      boneName: Head
+      vertex: 9
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 10
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 11
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 12
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 13
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 14
+      weight: .241685256
+    - index: 2
+      boneName: Head
+      vertex: 15
+      weight: .395452589
+    - index: 2
+      boneName: Head
+      vertex: 16
+      weight: .408260107
+    - index: 2
+      boneName: Head
+      vertex: 17
+      weight: .15712975
+    - index: 2
+      boneName: Head
+      vertex: 18
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 19
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 20
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 21
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 22
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 23
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 24
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 25
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 26
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 27
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 28
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 29
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 30
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 31
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 32
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 33
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 34
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 35
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 36
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 37
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 38
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 39
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 40
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 41
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 42
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 43
+      weight: 0
+    - index: 2
+      boneName: Head
+      vertex: 44
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 0
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 1
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 2
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 3
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 4
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 5
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 6
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 7
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 8
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 9
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 10
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 11
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 12
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 13
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 14
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 15
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 16
+      weight: .214717045
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 17
+      weight: .0616831817
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 18
+      weight: .5083341
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 19
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 20
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 21
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 22
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 23
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 24
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 25
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 26
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 27
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 28
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 29
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 30
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 31
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 32
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 33
+      weight: .399267405
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 34
+      weight: .422750801
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 35
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 36
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 37
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 38
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 39
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 40
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 41
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 42
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 43
+      weight: 0
+    - index: 6
+      boneName: UpperArm.R
+      vertex: 44
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 0
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 1
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 2
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 3
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 4
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 5
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 6
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 7
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 8
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 9
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 10
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 11
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 12
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 13
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 14
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 15
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 16
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 17
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 18
+      weight: .49166593
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 19
+      weight: .499299318
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 20
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 21
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 22
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 23
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 24
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 25
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 26
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 27
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 28
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 29
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 30
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 31
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 32
+      weight: .41483444
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 33
+      weight: .407621294
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 34
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 35
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 36
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 37
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 38
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 39
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 40
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 41
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 42
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 43
+      weight: 0
+    - index: 7
+      boneName: LowerArm.R
+      vertex: 44
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 0
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 1
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 2
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 3
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 4
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 5
+      weight: .769082487
+    - index: 8
+      boneName: Hand.R
+      vertex: 6
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 7
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 8
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 9
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 10
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 11
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 12
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 13
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 14
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 15
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 16
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 17
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 18
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 19
+      weight: .500700593
+    - index: 8
+      boneName: Hand.R
+      vertex: 20
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 21
+      weight: .722283483
+    - index: 8
+      boneName: Hand.R
+      vertex: 22
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 23
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 24
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 25
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 26
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 27
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 28
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 29
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 30
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 31
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 32
+      weight: .446037024
+    - index: 8
+      boneName: Hand.R
+      vertex: 33
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 34
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 35
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 36
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 37
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 38
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 39
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 40
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 41
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 42
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 43
+      weight: 0
+    - index: 8
+      boneName: Hand.R
+      vertex: 44
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 0
+      weight: .274181217
+    - index: 12
+      boneName: Thigh.R
+      vertex: 1
+      weight: .238318488
+    - index: 12
+      boneName: Thigh.R
+      vertex: 2
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 3
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 4
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 5
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 6
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 7
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 8
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 9
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 10
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 11
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 12
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 13
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 14
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 15
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 16
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 17
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 18
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 19
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 20
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 21
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 22
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 23
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 24
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 25
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 26
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 27
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 28
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 29
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 30
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 31
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 32
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 33
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 34
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 35
+      weight: .231808633
+    - index: 12
+      boneName: Thigh.R
+      vertex: 36
+      weight: .350402832
+    - index: 12
+      boneName: Thigh.R
+      vertex: 37
+      weight: .543771327
+    - index: 12
+      boneName: Thigh.R
+      vertex: 38
+      weight: .409524649
+    - index: 12
+      boneName: Thigh.R
+      vertex: 39
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 40
+      weight: 0
+    - index: 12
+      boneName: Thigh.R
+      vertex: 41
+      weight: .0507649556
+    - index: 12
+      boneName: Thigh.R
+      vertex: 42
+      weight: .219457805
+    - index: 12
+      boneName: Thigh.R
+      vertex: 43
+      weight: .236252427
+    - index: 12
+      boneName: Thigh.R
+      vertex: 44
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 0
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 1
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 2
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 3
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 4
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 5
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 6
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 7
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 8
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 9
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 10
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 11
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 12
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 13
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 14
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 15
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 16
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 17
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 18
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 19
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 20
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 21
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 22
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 23
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 24
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 25
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 26
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 27
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 28
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 29
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 30
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 31
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 32
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 33
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 34
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 35
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 36
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 37
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 38
+      weight: .422705263
+    - index: 13
+      boneName: Shin.R
+      vertex: 39
+      weight: .0817131773
+    - index: 13
+      boneName: Shin.R
+      vertex: 40
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 41
+      weight: .0753215775
+    - index: 13
+      boneName: Shin.R
+      vertex: 42
+      weight: 0
+    - index: 13
+      boneName: Shin.R
+      vertex: 43
+      weight: .252526283
+    - index: 13
+      boneName: Shin.R
+      vertex: 44
+      weight: .102485061
+    - index: 14
+      boneName: Foot.R
+      vertex: 0
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 1
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 2
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 3
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 4
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 5
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 6
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 7
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 8
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 9
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 10
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 11
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 12
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 13
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 14
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 15
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 16
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 17
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 18
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 19
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 20
+      weight: .375281185
+    - index: 14
+      boneName: Foot.R
+      vertex: 21
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 22
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 23
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 24
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 25
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 26
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 27
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 28
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 29
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 30
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 31
+      weight: .343267709
+    - index: 14
+      boneName: Foot.R
+      vertex: 32
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 33
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 34
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 35
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 36
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 37
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 38
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 39
+      weight: .279486835
+    - index: 14
+      boneName: Foot.R
+      vertex: 40
+      weight: .00458182767
+    - index: 14
+      boneName: Foot.R
+      vertex: 41
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 42
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 43
+      weight: 0
+    - index: 14
+      boneName: Foot.R
+      vertex: 44
+      weight: .298816442
+--- !u!137 &928777027
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928777024}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 43d30531d0538ba4594c6316f09689a3, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 621524119}
+  m_Bones:
+  - {fileID: 1480329631}
+  - {fileID: 1597292800}
+  - {fileID: 1915607470}
+  - {fileID: 1727339038}
+  - {fileID: 434008902}
+  - {fileID: 36952850}
+  - {fileID: 207296990}
+  - {fileID: 831106255}
+  - {fileID: 589821834}
+  - {fileID: 1326425658}
+  - {fileID: 2055382279}
+  - {fileID: 271010123}
+  - {fileID: 2083103629}
+  - {fileID: 1707663060}
+  - {fileID: 2145543390}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 388657520}
+  m_AABB:
+    m_Center: {x: .0108693838, y: -.026296854, z: 0}
+    m_Extent: {x: 2.16306114, y: 2.52629638, z: 0}
+  m_DirtyAABB: 0
+--- !u!33 &928777028
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928777024}
+  m_Mesh: {fileID: 4300000, guid: 1c71c823d6c8bfe48b43dccf04f01cc5, type: 3}
+--- !u!1 &1326425657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1326425658}
+  - 114: {fileID: 1326425659}
+  m_Layer: 0
+  m_Name: Thigh.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1326425658
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326425657}
+  m_LocalRotation: {x: 0, y: 0, z: .975468397, w: -.220139623}
+  m_LocalPosition: {x: .377970427, y: .333724737, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2055382279}
+  m_Father: {fileID: 1480329631}
+  m_RootOrder: 0
+--- !u!114 &1326425659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326425657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 9
+  length: 1.3356483
+  snapToParent: 0
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .569999993
+  influenceHead: .289999992
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &1340019251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1340019252}
+  - 114: {fileID: 1340019253}
+  m_Layer: 0
+  m_Name: FootIK.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1340019252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340019251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.10570526, y: -2.32780385, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
+  m_Children: []
+  m_Father: {fileID: 388657520}
+  m_RootOrder: 0
+--- !u!114 &1340019253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340019251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe398397c40f5e4586ee379a6558f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  showCross: 0
+  crossScale: 1
+  showX: 0
+  xScale: 1
+  polygonSides: 3
+  freezeSize: 0
+  color: {r: 0, g: 1, b: 0, a: 1}
+--- !u!1 &1372983118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1372983119}
+  - 114: {fileID: 1372983120}
+  m_Layer: 0
+  m_Name: HandIK.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1372983119
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372983118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.48890233, y: 2.5176599, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
+  m_Children: []
+  m_Father: {fileID: 388657520}
+  m_RootOrder: 1
+--- !u!114 &1372983120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372983118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe398397c40f5e4586ee379a6558f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  showCross: 0
+  crossScale: 1
+  showX: 0
+  xScale: 1
+  polygonSides: 3
+  freezeSize: 0
+  color: {r: 0, g: 1, b: 0, a: 1}
+--- !u!1 &1480329629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1480329631}
+  - 114: {fileID: 1480329630}
+  m_Layer: 0
+  m_Name: Hips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1480329630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480329629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  length: 1.22000003
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .920000017
+  influenceHead: .600000024
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!4 &1480329631
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480329629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1326425658}
+  - {fileID: 1597292800}
+  - {fileID: 2083103629}
+  m_Father: {fileID: 388657520}
+  m_RootOrder: 4
+--- !u!1 &1567040050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1567040051}
+  - 114: {fileID: 1567040052}
+  m_Layer: 0
+  m_Name: FootIK.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567040051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567040050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.796528935, y: -2.40759134, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
+  m_Children: []
+  m_Father: {fileID: 388657520}
+  m_RootOrder: 3
+--- !u!114 &1567040052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567040050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe398397c40f5e4586ee379a6558f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  showCross: 0
+  crossScale: 1
+  showX: 0
+  xScale: 1
+  polygonSides: 3
+  freezeSize: 0
+  color: {r: 0, g: 1, b: 0, a: 1}
+--- !u!1 &1597292799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1597292800}
+  - 114: {fileID: 1597292801}
+  m_Layer: 0
+  m_Name: Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1597292800
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597292799}
+  m_LocalRotation: {x: 0, y: 0, z: .00711572357, w: .999974668}
+  m_LocalPosition: {x: 0, y: 1.22000003, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1727339038}
+  - {fileID: 1915607470}
+  - {fileID: 207296990}
+  m_Father: {fileID: 1480329631}
+  m_RootOrder: 1
+--- !u!114 &1597292801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597292799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  length: .454003066
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .519999981
+  influenceHead: .340000004
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &1707663059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1707663060}
+  - 114: {fileID: 1707663061}
+  m_Layer: 0
+  m_Name: Shin.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1707663060
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1707663059}
+  m_LocalRotation: {x: 0, y: 0, z: .11093834, w: .993827283}
+  m_LocalPosition: {x: 9.03026987e-09, y: 1.2930299, z: 0}
+  m_LocalScale: {x: .999999762, y: .999999762, z: 1}
+  m_Children:
+  - {fileID: 2145543390}
+  m_Father: {fileID: 2083103629}
+  m_RootOrder: 0
+--- !u!114 &1707663061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1707663059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 13
+  length: 1.0549866
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .340000004
+  influenceHead: .25
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &1727339037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1727339038}
+  - 114: {fileID: 1727339039}
+  m_Layer: 0
+  m_Name: UpperArm.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727339038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727339037}
+  m_LocalRotation: {x: 0, y: 0, z: .745848536, w: -.666115582}
+  m_LocalPosition: {x: .440125704, y: .239183322, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 434008902}
+  m_Father: {fileID: 1597292800}
+  m_RootOrder: 0
+--- !u!114 &1727339039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727339037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 3
+  length: .561019123
+  snapToParent: 0
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .349999994
+  influenceHead: .400000006
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &1915607469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1915607470}
+  - 114: {fileID: 1915607471}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915607470
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915607469}
+  m_LocalRotation: {x: 0, y: 0, z: .00711569376, w: -.999974728}
+  m_LocalPosition: {x: 9.79724635e-11, y: .454003066, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597292800}
+  m_RootOrder: 1
+--- !u!114 &1915607471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915607469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  length: .782007217
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .439999998
+  influenceHead: .569999993
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &2006682521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2006682526}
+  - 20: {fileID: 2006682525}
+  - 92: {fileID: 2006682524}
+  - 124: {fileID: 2006682523}
+  - 81: {fileID: 2006682522}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &2006682522
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006682521}
+  m_Enabled: 1
+--- !u!124 &2006682523
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006682521}
+  m_Enabled: 1
+--- !u!92 &2006682524
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006682521}
+  m_Enabled: 1
+--- !u!20 &2006682525
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006682521}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 2.87980914
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &2006682526
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006682521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.39218235, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &2055382278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2055382279}
+  - 114: {fileID: 2055382280}
+  m_Layer: 0
+  m_Name: Shin.L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2055382279
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055382278}
+  m_LocalRotation: {x: 0, y: 0, z: .156770468, w: -.987635076}
+  m_LocalPosition: {x: -2.39440432e-08, y: 1.33564866, z: 0}
+  m_LocalScale: {x: .999999762, y: .999999762, z: 1}
+  m_Children:
+  - {fileID: 271010123}
+  m_Father: {fileID: 1326425658}
+  m_RootOrder: 0
+--- !u!114 &2055382280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055382278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 10
+  length: 1.0171746
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .340000004
+  influenceHead: .25
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &2083103628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2083103629}
+  - 114: {fileID: 2083103630}
+  m_Layer: 0
+  m_Name: Thigh.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2083103629
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083103628}
+  m_LocalRotation: {x: 0, y: 0, z: .988172591, w: .153345838}
+  m_LocalPosition: {x: -.312803477, y: .333724499, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1707663060}
+  m_Father: {fileID: 1480329631}
+  m_RootOrder: 2
+--- !u!114 &2083103630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083103628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 12
+  length: 1.29302979
+  snapToParent: 0
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .560000002
+  influenceHead: .330000013
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!1 &2145543389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2145543390}
+  - 114: {fileID: 2145543391}
+  - 114: {fileID: 2145543392}
+  m_Layer: 0
+  m_Name: Foot.R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2145543390
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145543389}
+  m_LocalRotation: {x: 0, y: 0, z: .0409325026, w: .999161959}
+  m_LocalPosition: {x: 5.34835571e-08, y: 1.05498683, z: 0}
+  m_LocalScale: {x: .999999762, y: .999999762, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1707663060}
+  m_RootOrder: 0
+--- !u!114 &2145543391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145543389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41abbb24ffdd60f4eb1abe64ef8064f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 14
+  length: .469933212
+  snapToParent: 1
+  editMode: 1
+  showInfluence: 0
+  deform: 0
+  influenceTail: .319999993
+  influenceHead: .349999994
+  zOrder: 0
+  color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!114 &2145543392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145543389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938b560d4abdf5f42aeac0c56311a10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  influence: 1
+  chainLength: 3
+  target: {fileID: 1567040051}
