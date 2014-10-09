@@ -5,9 +5,9 @@ namespace Game.Component
 {
     public class GMovement : GComponent
     {
-        public List<Vector3> _moves = new List<Vector3>();
+        public float _moves;
         public float _gravity;
-
+        public bool _grounded;
         public GMovement()
         {
             

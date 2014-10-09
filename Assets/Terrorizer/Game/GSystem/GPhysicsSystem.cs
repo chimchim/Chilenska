@@ -30,26 +30,53 @@ namespace Game.System
 
                 float dst = Mathf.Min(500-right.distance, 500-left.distance);
 
-                if (dst > Mathf.Abs(movement._gravity-Time.deltaTime)+0.4f)
+
+                if (0.2f > dst)
                 {
-                    Debug.Log("IF " +dst);
-                    movement._gravity -= Time.deltaTime*0.1f;
+
+                    movement._grounded = true;
+                    deltaY = 0.2f - dst;
+                }
+                
+                else if (!movement._grounded)
+                {
+                    movement._grounded = false;
+                    movement._gravity -= Time.deltaTime * 0.1f;
                     deltaY = movement._gravity;
                 }
-                    sd
-                else
+                else if (dst > 0.3f)
                 {
-                    Debug.Log("Else");
-                    movement._gravity = 0;
-                    deltaY = 0;
+                    movement._grounded = false;
                 }
 
-                foreach (Vector3 vec in movement._moves)
+                if (right.distance >= left.distance && .25f > dst)
                 {
-                    transform._position += vec;
+                    if (left.normal.normalized == new Vector2(left.transform.right.x, left.transform.right.y).normalized)
+                    {
+                        Debug.Log("left " + left.transform.right + " " + left.normal + " " + left.normal.y);
+                        Debug.Log("Drill");
+                        transform._position += new Vector3(left.transform.right.x, -left.transform.right.y, 0) * movement._moves;
+                    }
+                    else
+                    {
+                        transform._position += left.transform.right * movement._moves;
+                    }
                 }
+                else if (.25f > dst)
+                {
+                    transform._position += right.transform.right * movement._moves;
+                }
+                else
+                {
+                    transform._position += Vector3.right * movement._moves;
+                }
+
+                //transform._position += Vector3.right*movement._moves;
+                
+                movement._moves = 0;
+
                 transform._position += new Vector3(0, deltaY, 0);
-                movement._moves.Clear();
+
             }
         }
 

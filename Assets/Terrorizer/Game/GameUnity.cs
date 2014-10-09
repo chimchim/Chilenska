@@ -31,8 +31,8 @@ public class GameUnity : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-        game.Update(Time.deltaTime);
-        trans.position = game.Entities.GetComponentOf<GTransform>(entity)._position;
+       // game.Update(Time.deltaTime);
+       // trans.position = game.Entities.GetComponentOf<GTransform>(entity)._position;
 	}
 
     private void addSystems(GameManager game)

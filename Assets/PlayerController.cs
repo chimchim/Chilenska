@@ -10,10 +10,10 @@ public class PlayerController : MonoBehaviour {
 	public float acceleration = 30;
 	public float jumpHeight = 12;
 	
-	private float currentSpeed;
+	public float currentSpeed;
 	private float targetSpeed;
 	private Vector2 amountToMove;
-	
+    private Vector2 direction;
 	private PlayerPhysics playerPhysics;
 	
 

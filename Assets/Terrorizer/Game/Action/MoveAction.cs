@@ -11,7 +11,7 @@ namespace Game.Actions
         private static ObjectPool<MoveAction> _pool = new ObjectPool<MoveAction>(100);
         private Vector3 _direction;
         private bool _depth;
-        private float maxMove = 9.0f;
+        private float maxMove = 2.0f;
         public MoveAction()
         {
 
@@ -40,17 +40,20 @@ namespace Game.Actions
                 RaycastHit2D top = Physics2D.Raycast(new Vector2((_direction.x * B.x) + P.x, B.y + P.y), _direction, 500);
                 float dst = (Mathf.Min(down.distance, top.distance));
                 float multi = maxMove * Time.deltaTime;
- 
-                if (dst - 0.1f > maxMove * multi)
+                Debug.DrawLine(new Vector2((_direction.x * B.x) + P.x, B.y + P.y), top.point);
+                Debug.DrawLine(new Vector2((_direction.x * B.x) + P.x, -B.y + P.y), down.point);
+                Debug.Log(down.distance);
+                if (dst - 0.1f > multi)
                 {
-                    move =  multi;
+                    move = multi;
                 }
 
                 else if (dst > 0.11f)
                 {
                     move = dst - 0.1f;
                 }
-                movement._moves.Add(new Vector3(_direction.x, _direction.y, 0) * move);
+              
+                    movement._moves = Mathf.Sign(_direction.x) * move;
                 //game.Entities.GetComponentOf<GTransform>(owner)._position += new Vector3(_direction.x, _direction.y, 0) * move;
 
             }
