@@ -17,61 +17,64 @@ namespace Game.System
        private ActionQueue _actionQueue;
        public override void Update(GameManager game, float delta)
        {
-
-           if (Input.GetKey(KeyCode.A))
-           {                                       
-               MoveAction a = MoveAction.Make(-Vector3.right, true);
-               a.Apply(game, _transform.EntityID);
-               a.Recycle();
-           }
-
-
-           if (Input.GetKey(KeyCode.D))
-           {                                        
-               MoveAction a = MoveAction.Make(Vector3.right, true);
-               a.Apply(game, _transform.EntityID);
-               a.Recycle();
-
-           }
-
-
-           if (Input.GetKeyDown(KeyCode.W))
-           {                                            
-               _actionQueue._actionQueue.Add(MoveAction.Make(Vector3.back, false));
-
-           }
-
-           if (Input.GetKeyDown(KeyCode.S))
-           {                                            
-               _actionQueue._actionQueue.Add(MoveAction.Make(-Vector3.back, false));
-
-           }
-
-
-           if (Input.GetKeyDown(KeyCode.Space))
-           {
-               JumpAction a = JumpAction.Make();
-               a.Apply(game, _transform.EntityID);
-               a.Recycle();
-           }
-
-
-           if (Input.GetMouseButton(0))
-           {
-              
+           
                
-           }
 
+               if (Input.GetKey(KeyCode.A))
+               {
+                   MoveAction a = MoveAction.Make(-Vector3.right, true);
+                   a.Apply(game, _transform.EntityID);
+                   a.Recycle();
+               }
+
+
+               if (Input.GetKey(KeyCode.D))
+               {
+                   MoveAction a = MoveAction.Make(Vector3.right, true);
+                   a.Apply(game, _transform.EntityID);
+                   a.Recycle();
+
+               }
+
+
+               if (Input.GetKey(KeyCode.W))
+               {
+
+                   MoveZAction a = MoveZAction.Make(1);
+                   a.Apply(game, _transform.EntityID);
+                   a.Recycle();
+               }
+
+               if (Input.GetKey(KeyCode.S))
+               {
+
+                   MoveZAction a = MoveZAction.Make(-1);
+                   a.Apply(game, _transform.EntityID);
+                   a.Recycle();
+               }
+
+
+               if (Input.GetKeyDown(KeyCode.Space))
+               {
+                   JumpAction a = JumpAction.Make();
+                   a.Apply(game, _transform.EntityID);
+                   a.Recycle();
+               }
+
+
+               if (Input.GetMouseButton(0))
+               {
+
+
+               }
+           
        }
 
        public override void InitSystems(GameManager game)
        {
            foreach (int entity in _entityList)
            {
-               //_playerInput = game.Entities.GetComponentOf<GRawInput>(entity);
                _transform = game.Entities.GetComponentOf<GTransform>(entity);
-               //_boxCollider = game.Entities.GetComponentOf<GBoxCollider2D>(entity);
-               //_actionQueue = game.Entities.GetComponentOf<ActionQueue>(entity);
            }
        }
     }

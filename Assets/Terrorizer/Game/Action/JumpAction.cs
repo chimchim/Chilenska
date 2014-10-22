@@ -24,8 +24,12 @@ namespace Game.Actions
 
         public override void Apply(GameManager game, int owner)
         {
-
-            game.Entities.GetComponentOf<GMovement>(owner)._gravity = 0.05f;      
+            GMovement movement = game.Entities.GetComponentOf<GMovement>(owner);
+            if (movement._grounded)
+            {
+                movement._grounded = false;
+                movement._gravity = 12;
+            }  
         }
 
         public override void Recycle()

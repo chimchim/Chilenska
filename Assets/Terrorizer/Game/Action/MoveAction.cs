@@ -27,65 +27,14 @@ namespace Game.Actions
 
         public override void Apply(GameManager game, int owner)
         {
-            float move = 0;
-            int[] inter = { -1, 1, 1, -1, -1 };
+
             GMovement movement = game.Entities.GetComponentOf<GMovement>(owner);
             Vector3 P = game.Entities.GetComponentOf<GTransform>(owner)._position;
             Vector2 B = game.Entities.GetComponentOf<GTransform>(owner)._bounds;
+            movement._targetSpeed = _direction.x * 8;
 
-            if (_depth)
-            {
 
-                RaycastHit2D down = Physics2D.Raycast(new Vector2((_direction.x * B.x) + P.x, -B.y + P.y), _direction, 500);
-                RaycastHit2D top = Physics2D.Raycast(new Vector2((_direction.x * B.x) + P.x, B.y + P.y), _direction, 500);
-                float dst = (Mathf.Min(down.distance, top.distance));
-                float multi = maxMove * Time.deltaTime;
-                Debug.DrawLine(new Vector2((_direction.x * B.x) + P.x, B.y + P.y), top.point);
-                Debug.DrawLine(new Vector2((_direction.x * B.x) + P.x, -B.y + P.y), down.point);
-                Debug.Log(down.distance);
-                if (dst - 0.1f > multi)
-                {
-                    move = multi;
-                }
 
-                else if (dst > 0.11f)
-                {
-                    move = dst - 0.1f;
-                }
-              
-                    movement._moves = Mathf.Sign(_direction.x) * move;
-                //game.Entities.GetComponentOf<GTransform>(owner)._position += new Vector3(_direction.x, _direction.y, 0) * move;
-
-            }
-            // if (_depth)
-            // {
-            // 
-            //     for (int i = 0; i < 2; i++)
-            //     {
-            //         RaycastHit2D hit = Physics2D.Raycast(
-            //         new Vector2((_direction.x * B.x) + P.x, (inter[i] * B.y) + P.y), _direction, 20);
-            //         if (hit.distance > 0.1f && hit)
-            //         {
-            //             
-            //             Debug.DrawLine(new Vector2((_direction.x * B.x) + P.x, (inter[i] * B.y) + P.y), hit.point);
-            //             Debug.Log("HitPoint " + hit.point  + " " + hit.transform.gameObject.layer + " Dot " + new Vector2(hit.normal.x*-1, hit.normal.y));
-            // 
-            //         }
-            //     }
-            // }
-            // else
-            // {
-            //     for (int i = 0; i < 4; i++)
-            //     {
-            //         RaycastHit2D hit = Physics2D.Raycast(
-            //         new Vector2((inter[i] * B.x) + P.x, (inter[i+1] * B.y) + P.y), _direction, 20, 10);
-            //         
-            //         if (hit != null)
-            //         {
-            //             Debug.Log("Normal " + hit.normal);
-            //         }
-            //     }
-            // }
 
         }
 

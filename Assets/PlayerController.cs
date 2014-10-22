@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(PlayerPhysics))]
+
 public class PlayerController : MonoBehaviour {
 	
 	// Player Handling
@@ -9,10 +9,13 @@ public class PlayerController : MonoBehaviour {
 	public float speed = 8;
 	public float acceleration = 30;
 	public float jumpHeight = 12;
-	
+
+    public float currentSpeedZ;
+    private float targetSpeedZ;
+
 	public float currentSpeed;
 	private float targetSpeed;
-	private Vector2 amountToMove;
+	private Vector3 amountToMove;
     private Vector2 direction;
 	private PlayerPhysics playerPhysics;
 	
@@ -24,19 +27,24 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		targetSpeed = Input.GetAxisRaw("Horizontal") * speed;
 		currentSpeed = IncrementTowards(currentSpeed, targetSpeed,acceleration);
-		
+
+        targetSpeedZ = Input.GetAxisRaw("Vertical") * speed;
+        //currentSpeedZ = IncrementTowards(currentSpeedZ, targetSpeedZ, acceleration);
+
 		if (playerPhysics.grounded) {
 			amountToMove.y = 0;
 			
 			// Jump
 			if (Input.GetButtonDown("Jump")) {
-				amountToMove.y = jumpHeight;	
+				amountToMove.y = jumpHeight;
+
 			}
 		}
 		
 		amountToMove.x = currentSpeed;
 		amountToMove.y -= gravity * Time.deltaTime;
 		playerPhysics.Move(amountToMove * Time.deltaTime);
+        playerPhysics.MoveZ(targetSpeedZ * Time.deltaTime);
 	}
 	
 	// Increase n towards target by speed
