@@ -26,6 +26,7 @@ namespace Game
             _systems.Add(0,new GInputSystem());
             _systems.Add(1, new GPhysicsSystem());
             _systems.Add(2, new Astar());
+            _systems.Add(3, new AIMovement());
             
         }
         public void InitAll(GameManager game)

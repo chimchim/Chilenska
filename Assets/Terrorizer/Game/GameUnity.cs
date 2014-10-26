@@ -47,21 +47,24 @@ public class GameUnity : MonoBehaviour
 
     private void createAI(GameManager game)
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 1; i++)
         {
             Entity ent = new Entity();
             game.Entities.addEntity(ent);
-            ent.AddComponent(GTransform.Make(ent.ID, Vector3.zero, new Vector2(1f, 1f)));
+            ent.AddComponent(GTransform.Make(ent.ID, Vector3.zero, new Vector2(0.4f, 1f)));
             ent.AddComponent(GRawInput.Make(ent.ID));
             ent.AddComponent(ActionQueue.Make(ent.ID));
             ent.AddComponent(GCollisionMask.Make(ent.ID));
             ent.AddComponent(GMovement.Make(ent.ID));
+            ent.AddComponent(GAstarComponent.Make(ent.ID));
             ent.AddComponent(GBoxCollider2D.Make(ent.ID, new Vector2(0.2f, 0.5f),
                                                          new Vector2(0, -0.1f), new Vector2(0.2f, 0.5f)));
 
             GameObject clone = Instantiate(trans, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
             entityDic.Add(ent.ID, clone.transform);
             game.Systems.AddEntity(1, ent.ID);
+            game.Systems.AddEntity(2, ent.ID);
+            game.Systems.AddEntity(3, ent.ID);
         }
     }
 

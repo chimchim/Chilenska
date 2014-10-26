@@ -27,7 +27,7 @@ namespace Game.Actions
             GMovement movement = game.Entities.GetComponentOf<GMovement>(owner);
             GTransform transform = game.Entities.GetComponentOf<GTransform>(owner);
             RaycastHit2D hit;
-            float speed = 10 * Time.deltaTime * _dir;
+            float speed = 4 * Time.deltaTime * Mathf.Sign(_dir);
             Vector3 p = transform._position;
             Vector2 s = transform._bounds;
             bool canMove = true;

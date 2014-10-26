@@ -9,19 +9,17 @@ namespace Game.Actions
     public class MoveAction : Action
     {
         private static ObjectPool<MoveAction> _pool = new ObjectPool<MoveAction>(100);
-        private Vector3 _direction;
-        private bool _depth;
+        private float _direction;
         private float maxMove = 2.0f;
         public MoveAction()
         {
 
         }
 
-        public static MoveAction Make(Vector2 dir, bool depth)
+        public static MoveAction Make(float dir)
         {
             MoveAction move = _pool.GetNext();
             move._direction = dir;
-            move._depth = depth;
             return move;
         }
 
@@ -31,10 +29,7 @@ namespace Game.Actions
             GMovement movement = game.Entities.GetComponentOf<GMovement>(owner);
             Vector3 P = game.Entities.GetComponentOf<GTransform>(owner)._position;
             Vector2 B = game.Entities.GetComponentOf<GTransform>(owner)._bounds;
-            movement._targetSpeed = _direction.x * 8;
-
-
-
+            movement._targetSpeed = Mathf.Sign(_direction) * 4;
 
         }
 

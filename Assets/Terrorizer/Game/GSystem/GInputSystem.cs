@@ -22,7 +22,7 @@ namespace Game.System
 
                if (Input.GetKey(KeyCode.A))
                {
-                   MoveAction a = MoveAction.Make(-Vector3.right, true);
+                   MoveAction a = MoveAction.Make(-1);
                    a.Apply(game, _transform.EntityID);
                    a.Recycle();
                }
@@ -30,7 +30,7 @@ namespace Game.System
 
                if (Input.GetKey(KeyCode.D))
                {
-                   MoveAction a = MoveAction.Make(Vector3.right, true);
+                   MoveAction a = MoveAction.Make(1);
                    a.Apply(game, _transform.EntityID);
                    a.Recycle();
 
